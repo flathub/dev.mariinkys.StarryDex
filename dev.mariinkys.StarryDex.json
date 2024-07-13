@@ -12,7 +12,9 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri",
-        "--share=network"
+        "--share=network",
+        "--filesystem=xdg-config/cosmic:ro",
+        "--talk-name=com.system76.CosmicSettingsDaemon"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin"
