@@ -41,8 +41,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mariinkys/starrydex.git",
-                    "tag": "0.1.1",
-                    "commit": "a7a64c2e6d4b9b880977af729e413fe3d27c8916"
+                    "tag": "0.2.0",
+                    "commit": "950ad3c15d6777614e3c751d91bbe2ffd7ebdd43"
                 },
                 "cargo-sources.json"
             ]
