@@ -13,7 +13,7 @@
         "--socket=wayland",
         "--device=dri",
         "--share=network",
-        "--filesystem=xdg-config/cosmic:ro",
+        "--filesystem=xdg-config/cosmic:rw",
         "--talk-name=com.system76.CosmicSettingsDaemon"
     ],
     "build-options": {
@@ -41,8 +41,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mariinkys/starrydex.git",
-                    "tag": "0.2.6",
-                    "commit": "f5c73e4a76a464f825eb6d5825daea26a916270f"
+                    "tag": "0.2.7",
+                    "commit": "ca8e3c67e736b4a3611b40025230473de113349f"
                 },
                 "cargo-sources.json"
             ]
