@@ -1,7 +1,7 @@
 {
     "app-id": "dev.mariinkys.StarryDex",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "24.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -12,7 +12,6 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri",
-        "--share=network",
         "--filesystem=xdg-config/cosmic:rw",
         "--talk-name=com.system76.CosmicSettingsDaemon"
     ],
@@ -41,8 +40,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mariinkys/starrydex.git",
-                    "tag": "0.2.8",
-                    "commit": "51a39fb722e3f556ec89bdeedc4d13e1a7ffeaa6"
+                    "tag": "0.3.0",
+                    "commit": "4866963b5f713dba412de67c58757f317674232a"
                 },
                 "cargo-sources.json"
             ]
