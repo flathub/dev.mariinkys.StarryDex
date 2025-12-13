@@ -6,7 +6,7 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
-    "command": "starry-dex",
+    "command": "starrydex",
     "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
@@ -20,28 +20,27 @@
     },
     "modules": [
         {
-            "name": "starry-dex",
+            "name": "starrydex",
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "CARGO_HOME": "/run/build/starry-dex/cargo"
+                    "CARGO_HOME": "/run/build/starrydex/cargo"
                 }
             },
             "build-commands": [
                 "cargo --offline fetch --manifest-path Cargo.toml --verbose",
                 "cargo --offline build --release --verbose",
-                "install -Dm0755 ./target/release/starry-dex /app/bin/starry-dex",
-                "install -Dm0644 ./res/dev.mariinkys.StarryDex.desktop /app/share/applications/dev.mariinkys.StarryDex.desktop",
-                "install -Dm0644 ./res/dev.mariinkys.StarryDex.metainfo.xml /app/share/metainfo/dev.mariinkys.StarryDex.metainfo.xml",
-                "install -Dm0644 ./res/icons/hicolor/256x256/apps/dev.mariinkys.StarryDex.png /app/share/icons/hicolor/256x256/apps/dev.mariinkys.StarryDex.png",
-                "install -Dm0644 ./res/icons/hicolor/256x256/apps/dev.mariinkys.StarryDex.svg /app/share/icons/hicolor/scalable/apps/dev.mariinkys.StarryDex.svg"
+                "install -Dm0755 ./target/release/starrydex /app/bin/starrydex",
+                "install -Dm0644 ./resources/app.desktop /app/share/applications/dev.mariinkys.StarryDex.desktop",
+                "install -Dm0644 ./resources/app.metainfo.xml /app/share/metainfo/dev.mariinkys.StarryDex.metainfo.xml",
+                "install -Dm0644 ./resources/icons/hicolor/scalable/apps/icon.svg /app/share/icons/hicolor/scalable/apps/dev.mariinkys.StarryDex.svg"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/mariinkys/starrydex.git",
-                    "tag": "0.3.1",
-                    "commit": "1e431fb6f107bbf55f2b0fe8d2435b3b193141cf"
+                    "tag": "0.3.2",
+                    "commit": "61de578e4dd8a75eec3afa4c9584235ad50f90ed"
                 },
                 "cargo-sources.json"
             ]
