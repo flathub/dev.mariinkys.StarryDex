@@ -6,6 +6,8 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
+    "base": "com.system76.Cosmic.BaseApp",
+    "base-version": "stable",
     "command": "starrydex",
     "finish-args": [
         "--share=ipc",
@@ -39,7 +41,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mariinkys/starrydex.git",
-                    "commit": "b83a56b0871b60d16c47c6650f0045ef5eaf1fb8"
+                    "tag": "0.3.3",
+                    "commit": "b105f35ddef1d25a84bc2841ea86805ed20189ab"
                 },
                 "cargo-sources.json"
             ]
