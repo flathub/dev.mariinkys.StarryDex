@@ -13,6 +13,7 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--socket=pulseaudio",
         "--device=dri",
         "--filesystem=xdg-config/cosmic:rw",
         "--talk-name=com.system76.CosmicSettingsDaemon"
@@ -41,8 +42,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mariinkys/starrydex.git",
-                    "tag": "0.3.3",
-                    "commit": "b105f35ddef1d25a84bc2841ea86805ed20189ab"
+                    "commit": "4e1800c2ddb5735471266e7f6cdb7629817c9953"
                 },
                 "cargo-sources.json"
             ]
