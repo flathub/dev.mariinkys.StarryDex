@@ -1,7 +1,7 @@
 {
   "app-id": "dev.mariinkys.StarryDex",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "25.08",
+  "runtime-version": "26.08",
   "sdk": "org.freedesktop.Sdk",
   "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
   "base": "com.system76.Cosmic.BaseApp",
@@ -41,8 +41,8 @@
         {
           "type": "git",
           "url": "https://github.com/mariinkys/starrydex.git",
-          "tag": "0.3.8",
-          "commit": "b81b43f04c162de1634dc6dedf322003b77459c1"
+          "tag": "0.4.0",
+          "commit": "b3f86ebb757ec4348c74c1544ae275f5f406e5e7"
         },
         "cargo-sources.json"
       ]
